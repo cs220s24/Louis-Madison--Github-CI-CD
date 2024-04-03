@@ -1,3 +1,3 @@
 ## 220-Project
 # Github CI/CD
-Contributors: Louis Spann, 
+Contributors: Louis Spann &  

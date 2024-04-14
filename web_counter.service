@@ -1,0 +1,11 @@
+[Unit]
+Description=Launch the Flask server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/home/ec2-user/web_counter/.venv/bin/gunicorn --chdir /home/ec2-user/web_counter --bind 0.0.0.0:80 app:app
+
+[Install]
+WantedBy=multi-user.target
+

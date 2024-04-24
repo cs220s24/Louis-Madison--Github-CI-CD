@@ -21,10 +21,11 @@ def test_count_increment(client):
     # Send multiple GET requests to the home page
     client.get('/')
     client.get('/')
+    client.get('/')
     # Get the count after requests
     updated_count = read_count()
     # Assert that the count has incremented correctly
-    assert updated_count == initial_count + 2
+    assert updated_count == initial_count + 3
 
 
   

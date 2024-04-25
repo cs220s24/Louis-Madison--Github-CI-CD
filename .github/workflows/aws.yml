@@ -4,20 +4,27 @@ on:
   push:
     branches: [ "main" ]
 
+env:
+  REMOTE_HOST: "ec2-54-90-127-37"
+  REMOTE_USER: "ec2-user"
+
+permissions:
+  contents: read
+  id-token: write
+
 jobs:
-  deploy:
-    name: Deploy to EC2 on master branch push
+  redeploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-
-    - name: Deploy to Server 
-      uses: easingthemes/ssh-deploy@main
-      env:
-          SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
-          REMOTE_HOST: ${{ secrets.HOST_DNS }}
-          REMOTE_USER: ${{ secrets.USERNAME }}
-          TARGET: ${{ secrets.TARGET_DIR }}  
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$SSH_KEY" > ~/.ssh/github-actions-key
+          chmod 600 ~/.ssh/github-actions-key
+          ssh -i ~/.ssh/github-actions-key -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST csci220_final/redeploy
+        env:
+          SSH_HOST: ${{ env.REMOTE_HOST }}
+          SSH_USER: ${{ env.REMOTE_USER }}
+          SSH_KEY: ${{ secrets.labuserpem }} 
 

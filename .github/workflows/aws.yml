@@ -5,7 +5,7 @@ on:
     branches: [ "main" ]
 
 env:
-  REMOTE_HOST: "secrets.EC2_PUBLIC_ADDRESS"
+  REMOTE_HOST: "54.196.0.175"
   REMOTE_USER: "ec2-user"
 
 permissions:

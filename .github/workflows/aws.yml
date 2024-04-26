@@ -29,6 +29,11 @@ jobs:
           echo "$SSH_KEY" > ~/.ssh/github-actions-key
           chmod 600 ~/.ssh/github-actions-key
           ssh -i ~/.ssh/github-actions-key -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST 
+          git pull
+          cd web_counter
+          python3 -m venv .venv
+          source .venv/bin/activat
+          pip install -r requirements.txt
           sudo cp ../web_counter.service /etc/systemd/system
           sudo systemctl enable web_counter service
           sudo systemctl start web_counter service

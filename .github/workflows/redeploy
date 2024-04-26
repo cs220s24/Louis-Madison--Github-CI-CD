@@ -1,3 +1,0 @@
-sudo cp web_counter.service /etc/systemd/system
-sudo systemctl enable web_counter service
-sudo systemctl start web_counter service

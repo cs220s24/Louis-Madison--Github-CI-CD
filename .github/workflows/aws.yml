@@ -19,7 +19,7 @@ jobs:
     steps:
       - name: Configure SSH
         
-         env:
+        env:
           SSH_HOST: ${{ env.REMOTE_HOST }}
           SSH_USER: ${{ env.REMOTE_USER }}
           SSH_KEY: ${{ secrets.labuserpem }} 

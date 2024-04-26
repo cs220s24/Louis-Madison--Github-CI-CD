@@ -5,6 +5,7 @@ on:
     branches: [ "main" ]
 
 env:
+  REMOTE_HOST: "{secrets.EC2_PUBLIC_ADDRESS}"
   REMOTE_USER: "ec2-user"
 
 permissions:
@@ -19,7 +20,7 @@ jobs:
       - name: Configure SSH
         
         env:
-          SSH_HOST: ${{secrets.EC2_PUBLIC_ADDRESS}}
+          SSH_HOST: ${{REMOTE_HOST}}
           SSH_USER: ${{ env.REMOTE_USER }}
           SSH_KEY: ${{ secrets.labuserpem }} 
         

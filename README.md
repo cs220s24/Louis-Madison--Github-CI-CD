@@ -4,7 +4,7 @@ Contributors: Louis Spann & Madison Myers
 
 Setup for local 
 
-1.git clone the web_counter repo
+ 1.git clone the web_counter repo
 	-cd into repo
  
 2. make a vitrual environment

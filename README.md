@@ -3,6 +3,7 @@
 Contributors: Louis Spann & Madison Myers
 
 Setup for local 
+
 1.git clone the web_counter repo
 	-cd into repo
  

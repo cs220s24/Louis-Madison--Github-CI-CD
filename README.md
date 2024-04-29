@@ -1,11 +1,7 @@
 # 220-Project
-
-
+## Github CI/CD
 ## Overview
 
-
-
-## Github CI/CD
 Contributors: Louis Spann & Madison Myers
 
 ### Setup for local 
@@ -32,6 +28,8 @@ Contributors: Louis Spann & Madison Myers
 9. run Gunicorn command
     gunicorn --bind 0.0.0.0:8000 app:app
 
+11. Open a browser and paste http://localhost:8000
+
 ### Setup for AWS
 1. make EC2 instance
 2. ssh into instance
@@ -48,6 +46,6 @@ Contributors: Louis Spann & Madison Myers
 11. ssh into instance in new terminal window 
 12. Run this command in the second terminal window
     curl http://localhost:8000
-
-13.run Gunicorn command
+13. Run Gunicorn command
     gunicorn --bind 0.0.0.0:8000 app:app
+15. Open a browser and paste http://localhost:8000

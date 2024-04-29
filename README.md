@@ -1,6 +1,7 @@
 # 220-Project
 ## Github CI/CD
 ## Overview
+Our project implements Continuous Integration (CI) and mostly implements Continuous Delivery (CD) using the web_counter application. The CI runs tests for functionally and correct formatting. The CD then the CD part should deploy the application into a EC2 Instance. Unfortunately, we have the CD connected into a EC2 instance, but we didn't get to the point where web_counter would be up and running on the EC2 instance. The test.py is used for general testing of the CI/CD process, but the rest of the file besides the workflows are the same. For this project, we also learned how to the password manager Github has called secrets. We made two secrets for this project called EC2_PUBLIC_ADDRESS and LABUSERPEM. The LABUSERPEM is hiding the private IP address, so that it's not in our code publicly. We used EC2_PUBLIC_ADDRESS because it's easier to update the public EC2 IP from secrets than in the code for the CD workflow. 
 
 Contributors: Louis Spann & Madison Myers
 

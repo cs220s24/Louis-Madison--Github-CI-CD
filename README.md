@@ -5,6 +5,14 @@ Our project implements Continuous Integration (CI) and mostly implements Continu
 
 Contributors: Louis Spann & Madison Myers
 
+## UML Diagram 
+
+![demo  CICD merge with main and doing pull request to show that the tests are running (2)](https://github.com/cs220s24/Louis-Madison--Github-CI-CD/assets/143567041/37421fd1-16db-4635-a46d-c0a2e7b531a4)
+
+
+
+
+
 ## Setup for local 
 
 1.git clone the web_counter repo

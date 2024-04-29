@@ -4,7 +4,7 @@
 
 Contributors: Louis Spann & Madison Myers
 
-### Setup for local 
+## Setup for local 
 
 1.git clone the web_counter repo
 	-cd into repo
@@ -30,7 +30,7 @@ Contributors: Louis Spann & Madison Myers
 
 11. Open a browser and paste http://localhost:8000
 
-### Setup for AWS
+## Setup for AWS
 1. make EC2 instance
 2. ssh into instance
 3. sudo yum install git  

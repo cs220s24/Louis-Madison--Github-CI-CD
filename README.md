@@ -32,7 +32,7 @@ Contributors: Louis Spann & Madison Myers
 7. ssh into instance in new terminal window
     
 8. Run this command in the second terminal window
-    curl http://localhost:8000
+    curl localhost:8000
     
 9. run Gunicorn command
     gunicorn --bind 0.0.0.0:8000 app:app
@@ -54,7 +54,7 @@ Contributors: Louis Spann & Madison Myers
 10. make second terminal window
 11. ssh into instance in new terminal window 
 12. Run this command in the second terminal window
-    curl http://localhost:8000
+    curl localhost:8000
 13. Run Gunicorn command
     gunicorn --bind 0.0.0.0:8000 app:app
 15. Open a browser and paste http://localhost:8000
